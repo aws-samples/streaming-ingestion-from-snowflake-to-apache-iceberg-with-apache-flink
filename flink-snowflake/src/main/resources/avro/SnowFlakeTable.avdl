@@ -1,0 +1,9 @@
+@namespace("com.amazonaws.services.msf.avro")
+protocol SnowTableProtocol {
+        record SnowFlakeTable {
+                string PRICE;
+                string CATEGORY;
+                string NAME;
+                string UPDATED_AT;
+        }
+        }

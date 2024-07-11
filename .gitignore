@@ -1,0 +1,5 @@
+# Ignore the Snowflake/target directory
+flink-snowflake/target/
+
+# Ignore the .idea directory within Snowflake
+flink-snowflake/.idea/
