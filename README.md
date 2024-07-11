@@ -122,13 +122,11 @@ mvn clean package
 cd ..
 ```
 
-> If you want to make any changes to the username and passwords used for Amazon Cognito and Amazon OpenSearch, you can do so by modifying the const at the beginning the cdk stack at *lib/real-time-social-media-analytics-gen-ai.ts*
-
 7. Bootstrap your AWS environment
 ```shell
 cdk bootstrap
 ```
-8. Deploy the AWS Architecture
+8. Deploy the AWS Architecture with the required parameters
 ```shell
 cdk deploy --parameters icebergWarehouse=<IcebergWarehouse> --parameters IcebergDB=<IcebergDB> --parameters IcebergTableName=<IcebergTableName> --parameters IcebergPartitionFields=<IcebergPartitionFields> --parameters IcebergUpsertFields=<IcebergUpsertFields> --parameters IcebergOperation=<IcebergOperation> --parameters SnowflakeUser=<SnowflakeUser> --parameters SnowflakePassword=<SnowflakePassword> --parameters SnowflakeSchema=<SnowflakeSchema> --parameters SnowflakeWarehouse=<SnowflakeWarehouse> --parameters SnowflakeDB=<SnowflakeDB> --parameters SnowflakeID=<SnowflakeID> --parameters SnowflakePort=<SnowflakePort> --parameters SnowflakeTable=<SnowflakeTable> --parameters SnowflakeShardColumn=<SnowflakeShardColumn> --parameters SnowflakeSortColumn=<SnowflakeSortColumn> --parameters SnowflakeColumnInterval=<SnowflakeColumnInterval> --parameters SnowflakeQueryInterval=<SnowflakeQueryInterval> --parameters SnowflakeQuerySize=<SnowflakeQuerySize>
 ```
